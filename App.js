@@ -1,13 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Parent from 'components/Parent';
+import { StyleSheet } from 'react-native';
+import RootNav from 'navigations/RootNavigation';
+import { createAppContainer } from "react-navigation";
+
+const AppContainer = createAppContainer(RootNav);
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Parent />
-      </View>
+      <AppContainer />
     );
   }
 }

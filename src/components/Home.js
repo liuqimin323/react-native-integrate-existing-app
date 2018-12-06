@@ -20,6 +20,18 @@ export default class Home extends React.Component {
               </Text>
             
           </TouchableOpacity>
+          
+        <TouchableOpacity
+            onPress={() => {
+              this.props.navigation.navigate('TodoPage');
+            }}
+            style={styles.btn}
+          >
+              <Text>
+                Redux
+              </Text>
+            
+          </TouchableOpacity>
       </View>
     );
   }
@@ -29,7 +41,7 @@ const styles = StyleSheet.create({
   container: {
       flex: 1,
       backgroundColor: 'white',
-      alignItems: 'center',
+      paddingHorizontal: 16,
   },
   btn: {
     paddingTop: 8,
@@ -37,7 +49,6 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     marginTop: 16,
-    marginBottom: 16,
     borderRadius: 2,
     borderWidth: 1,
     borderColor: '#333333',

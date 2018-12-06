@@ -8,6 +8,8 @@ module.exports = function(api) {
         alias: {
           'components': './src/components',
           'navigations': './src/navigations',
+          'actions': './src/actions',
+          'reducers': './src/reducers',
         }
       }]
     ]

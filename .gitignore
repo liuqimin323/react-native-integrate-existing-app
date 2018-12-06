@@ -1,6 +1,8 @@
 node_modules/**/*
 .expo/*
 npm-debug.*
+android/app/build/*
+android/.gradle/*
 *.jks
 *.p12
 *.key
